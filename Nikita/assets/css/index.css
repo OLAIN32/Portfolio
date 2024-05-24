@@ -1,0 +1,611 @@
+/* Add a black background color to the top navigation bar */
+.topnav {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.lNav {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  width: 70%;
+  padding: 15px;
+}
+.rNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  gap: 10px;
+  width: 30%;
+  padding: 15px;
+}
+.moreBtn {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.iconMore {
+  width: 25px;
+}
+.login {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+}
+.searchLogo {
+  width: 30px;
+}
+.search {
+  width: 300px;
+  height: 32px;
+  background-color: rgb(40, 41, 45);
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.persAcc {
+  background-image: url(../img/hum.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.logo {
+  width: 50px;
+}
+.logoImg {
+  width: 50px;
+  background-color: rgb(66, 138, 250);
+  border-radius: 15px;
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type="text"] {
+  background-color: rgb(40, 41, 45);
+  color: white;
+  float: right;
+  padding: 6px;
+  width: 250px;
+  border: none;
+  font-size: 17px;
+}
+body {
+  background-color: rgb(27, 27, 29);
+}
+.message {
+  color: white;
+  white-space: normal;
+  width: 350px;
+  height: max-content;
+  background-color: rgb(60, 63, 68);
+  margin-top: 20px;
+  border-radius: 15px 15px 0 15px;
+  padding: 15px;
+  margin-left: 100px;
+}
+.info {
+  display: flex;
+  justify-content: space-around;
+}
+.sender {
+  text-align: left;
+}
+.timestamp {
+  margin-left: 250px;
+  color: rgb(104, 108, 111);
+}
+#user-input {
+  background-color: rgb(27, 27, 29);
+  color: white;
+  border: none;
+  height: 100%;
+  width: 400px;
+  border-radius: 15px;
+}
+.chat-box {
+  display: flex;
+  justify-content: right;
+}
+* {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+.login:hover {
+  cursor: pointer;
+}
+.roomName {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-top: 7px;
+  font-size: 25px;
+}
+.room {
+    font-size: 1em;
+  color: white;
+
+}
+main {
+  display: flex;
+  flex-direction: column;
+}
+.chat-container {
+    display: flex;
+  margin-top: 2%;
+  position: relative;
+  width: 500px;
+  min-height: 750px;
+  background-color: rgb(44, 45, 47);
+  border-radius: 15px;
+}
+.chat-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.chat-container::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+
+.chat-container::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+#send-btn {
+  margin-top: 10px;
+  background-color: rgb(59, 145, 248);
+  border-radius: 15px;
+  padding: 0px;
+  border: none;
+  width: 50px;
+  height: 50px;
+}
+.write {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  left: 15px;
+  right: 15px;
+  justify-content: space-around;
+  background-color: rgb(27, 27, 29);
+  height: 70px;
+  padding: 10px;
+  margin-top: 30px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+}
+.sendIco {
+  width: 30px;
+}
+.msgContent {
+  overflow-wrap: break-word;
+  display: inline;
+  max-width: 130px;
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+.vLine {
+  border: 0;
+
+  border-left: 2px solid rgb(53, 53, 55);
+  height: 50px;
+  float: left;
+}
+.timer {
+  transform: translate(0px, -15%);
+  background-color: rgb(40, 41, 43);
+  color: rgb(187, 191, 192);
+  text-align: center;
+  padding-top: 10px;
+  width: 150px;
+  height: 40px;
+  border-radius: 15px;
+}
+.container-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.otherUsers {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 150px;
+  justify-content: space-evenly;
+}
+.user {
+  display: flex;
+  justify-content: space-between;
+  background-image: url(../img/hum2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 150px;
+  background-color: rgb(59, 59, 59);
+  border-radius: 25px;
+  padding: 5px;
+}
+
+.mic {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 100%;
+  margin-top: 110px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 15px;
+  height: 15px;
+}
+.name {
+  margin-top: 110px;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  color: white;
+}
+
+.micLogo {
+  width: 15px;
+}
+#sidebar {
+  width: 80%;
+}
+.user:hover {
+  border: 3px solid rgb(80, 119, 169);
+  cursor: pointer;
+}
+.selName {
+  height: max-content;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: max-content;
+}
+.selectedUser {
+  display: none;
+  padding: 20px;
+  justify-content: right;
+  width: 70%;
+  height: 450px;
+  background-image: url(../img/hum2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+  margin-top: 40px;
+  border-radius: 25px;
+}
+
+.selectUser-show {
+  display: flex;
+}
+#sidebar {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+.active-user {
+  display: flex;
+  justify-content: space-between;
+  background-image: url(../img/hum2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 150px;
+  background-color: rgb(59, 59, 59);
+  border-radius: 25px;
+  padding: 5px;
+  border: 3px solid rgb(80, 119, 169);
+}
+#user1 {
+  display: flex;
+  justify-content: space-between;
+  background-image: url(../img/hum2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 150px;
+  background-color: rgb(59, 59, 59);
+  border-radius: 25px;
+  padding: 5px;
+}
+#user2 {
+  display: flex;
+  justify-content: space-between;
+  background-image: url(../img/hum3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 150px;
+  background-color: rgb(59, 59, 59);
+  border-radius: 25px;
+  padding: 5px;
+}
+#user3 {
+  display: flex;
+  justify-content: space-between;
+  background-image: url(../img/hum4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 150px;
+  background-color: rgb(59, 59, 59);
+  border-radius: 25px;
+  padding: 5px;
+}
+#user4 {
+  display: flex;
+  justify-content: space-between;
+  background-image: url(../img/hum5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 150px;
+  background-color: rgb(59, 59, 59);
+  border-radius: 25px;
+  padding: 5px;
+}
+#user5 {
+  display: flex;
+  justify-content: space-between;
+  background-image: url(../img/hum6.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 150px;
+  background-color: rgb(59, 59, 59);
+  border-radius: 25px;
+  padding: 5px;
+}
+.roomCode {
+  bottom: 15px;
+  left: 15px;
+  gap: 5px;
+  display: flex;
+  flex-direction: row;
+  width: 150px;
+  color: rgb(233, 234, 236);
+  height: 25px;
+  background-color: rgb(39, 40, 42);
+  padding: 15px 25px 15px 25px;
+  border-radius: 15px;
+}
+.roomCode:hover,
+.copyBtn:hover,
+.copyimg:hover {
+  cursor: pointer;
+}
+.bottomBar {
+  position: relative;
+  height: 100px;
+}
+.vLines {
+  border: 0;
+
+  border-left: 2px solid rgb(53, 53, 55);
+  height: 25px;
+  float: left;
+}
+.copyimg {
+  width: 20px;
+}
+.copyBtn {
+  padding: 2px;
+  background-color: rgb(39, 40, 42);
+  border: none;
+}
+.btnContainer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  gap: 35px;
+  align-items: center;
+  height: max-content;
+  position: absolute;
+
+  bottom: 0px;
+}
+.contactbtn {
+  gap: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.btnContainer .btnImg {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.btnContainer .btnImg:hover {
+  filter: brightness(1.2);
+}
+
+/* Пример стилей для активного состояния */
+.btnContainer .active .btnImg {
+  filter: brightness(1.5);
+}
+.exit {
+  background-color: rgb(216, 81, 68);
+  color: white;
+  border-radius: 15px;
+  font-weight: bold;
+  padding: 15px 35px 15px 35px;
+  max-width: max-content;
+}
+.exit:hover {
+  cursor: pointer;
+}
+.mute {
+  background-color: rgb(40, 40, 42);
+  padding: 15px;
+  border-radius: 15px;
+}
+.video {
+  background-color: rgb(40, 40, 42);
+  padding: 15px;
+  border-radius: 15px;
+}
+.dem {
+  background-color: rgb(40, 40, 42);
+  padding: 15px;
+  border-radius: 15px;
+}
+.subtitle {
+  background-color: rgb(40, 40, 42);
+  padding: 15px;
+  border-radius: 15px;
+}
+.cast {
+  background-color: rgb(40, 40, 42);
+  padding: 15px;
+  border-radius: 15px;
+}
+.more {
+  background-color: rgb(40, 40, 42);
+  padding: 15px;
+  border-radius: 15px;
+}
+.moreUser{
+    display: none;
+    margin-top: 110px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    transform: translate(0,-100%);
+
+}
+.userAv {
+    display: none;
+    justify-content: space-between;
+    background-image: url(../img/nonAvatar.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 90px;
+    background-color: rgb(59, 59, 59);
+    border-radius: 25px;
+    padding: 5px;
+    justify-content: center;
+  }
+  .userAv:hover {
+      border: 1px solid rgb(255, 255, 255);
+      transition: 500ms ease;
+      cursor: pointer;
+    }
+
+    @media screen and (min-width:1920px)  {
+      .container{
+        margin: auto;
+        width: 1920px;
+        
+      }
+    }
+@media screen and (max-width:1600px)  {
+    .chat{
+        display: none;
+    }
+    #sidebar{
+        width: 100%;
+    }
+    .search input{
+        display: none;
+    }
+    .search{
+        width: max-content;
+    }
+}
+.chat-icon{
+  display: none;
+background-color:rgb(66, 138, 250);
+padding: 10px;
+border-radius: 15px;
+height: max-content;
+width: max-content;
+}
+.chat-image{
+  width: 30px;
+  height: 30px;
+  fill: white;
+
+}
+@media screen and (max-width:1600px)  {
+.chat{
+  display: none;
+  transition: 5s ease;
+}
+.chat-icon{
+  display: flex;
+}
+}
+@media screen and (max-width:1080px)  {
+  .otherUsers{
+    justify-content: space-evenly;
+  }
+#user3{
+    display: none;
+}
+#user4{
+    display: none;
+}
+#user5{
+    display: none;
+}
+.otherUsers{
+    justify-content: center;
+    gap: 30px;
+    color: white;
+}
+.moreUser{
+    display: flex;
+}
+.rNav{
+    justify-content: right;
+}
+.room{
+    font-size: 20px;
+    padding-top: 5px;
+}
+.chat-icon{
+  display: flex;
+}
+.dem{
+  display: none;
+}
+.subtitle{
+  display: none;
+}
+.cast{
+  display: none;
+}
+#keygen-code{
+  display: none;
+}
+.vLines{
+  display: none;
+}
+.roomCode{
+  width: max-content;
+  height: max-content;
+  padding: 10px;
+}
+.copyimg{
+  width: 30px;
+  height: 30px;
+}
+.copyBtn{
+  width: max-content;
+  height: max-content;
+}
+}
+@media screen and (max-width:960px)  {
+  .room{
+    transform: translate(0,-20%);
+  }
+}

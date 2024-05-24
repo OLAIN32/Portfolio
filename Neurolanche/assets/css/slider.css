@@ -1,0 +1,440 @@
+.gallery {
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    margin-top: -8em;
+    /* width: 20en; */
+}
+
+.gallery__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    height: 6.1875em;
+    background-size: cover;
+    transition: 300ms, clip-path;
+}
+
+.gallery-slider {
+    width: calc(50% + 15.875em);
+    margin-left: -4.5375em;
+    
+    position: relative
+}
+
+.gallery-slider .swiper-container {
+    width: calc(100% + .5em)
+}
+
+.gallery-slider .swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 23.4375em;
+    width: 33%;
+    padding-right: .5em
+}
+.gallery-slider .swiper-nav {
+    position: absolute;
+    bottom: 2.875em;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 70;
+    margin-left: .7em
+}
+
+.gallery-slider .swiper-button {
+    width: 1em;
+    height: 1em;
+    position: relative;
+    left: unset;
+    top: unset;
+    right: unset;
+    margin: 0 .1em;
+    border-radius: 100%;
+    /* background: rgba(255, 255, 255, .08); */
+    -webkit-box-shadow: inset 0 2px 16px 0 rgba(44, 48, 56, .25);
+    box-shadow: inset 0 2px 16px 0 rgba(44, 48, 56, .25);
+    border: 3px dashed rgba(76, 71, 106, .8);
+    -webkit-backdrop-filter: blur(64px);
+    backdrop-filter: blur(64px);
+    margin-top: -9em;
+    
+}
+
+.gallery-slider .swiper-button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .08);
+    /* background: -webkit-gradient(linear, left top, left bottom, from(#7321ff), to(#216cff));
+    background: -o-linear-gradient(top, #7321ff 0, #216cff 100%);
+    background: linear-gradient(180deg, #7321ff 0, #216cff 100%); */
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    opacity: 0;
+    border-radius: 50%;
+    
+}
+
+.gallery-slider .swiper-button:hover {
+    border-color: #FDE096;
+    border: 3px solid rgba(253, 224, 150, .8);
+}
+.gallery-slider .swiper-button:hover svg path {
+    stroke: #F9FBFF;
+}
+.gallery-slider .swiper-button:hover:before {
+    opacity: 1
+}
+
+.gallery-slider .swiper-button svg {
+    position: relative;
+    z-index: 2;
+    width: .625em
+}
+.Black1 {
+    position: absolute;
+    width: 100.75em;
+    height: 12em;
+    border-radius: 100%;
+    margin-left: 2em;
+    background-color: #060607;
+    z-index: 999;
+    margin-top: -5.5em;
+}
+
+.Black2 {
+    position: absolute;
+    width: 25.75em;
+    height: 2em;
+    border-radius: 100%;
+    margin-left: -0.5em;
+    background-color: #15112E;
+    /* background-color: black; */
+    z-index: 49;
+    margin-top: 14.3em;
+
+}
+.swiper-button-next,
+.swiper-button-prev {
+    z-index: 2
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    display: none
+}
+.previe_slider{
+    cursor: pointer;
+    position: absolute;
+    margin-top: -12.5em;
+    margin-left: -0em;
+    width: 2.5em;
+    height:.75em;
+    border-radius: .15em;
+    z-index: 999;
+    background: radial-gradient(100% 100% at 100% 0%, #64A2FF 0%, #164AFF 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .2em;
+}
+.previe_slider img{
+    width: .4em;
+    margin-top: .18em;
+    margin-left: -.1em;
+}
+.previe_slider p{
+    font-size: .19em;
+    color: #F9FBFF;
+    letter-spacing: .1em;
+    /* margin-left: -.1em; */
+}
+
+@media screen and (max-width:576px) {
+    .gallery {
+        overflow: hidden;
+        position: relative;
+        z-index: 2;
+        margin-top: -10em;
+        /* width: 20en; */
+    }
+    
+    .gallery__img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        height: 2.3em;
+        background-size: cover;
+        transition: 300ms, clip-path;
+    }
+    
+    .gallery-slider {
+        width: calc(50% + 5.9em);
+        margin-left: -8em;
+        
+        position: relative
+    }
+    
+    .gallery-slider .swiper-container {
+        width: calc(100% + .5em)
+    }
+    
+    .gallery-slider .swiper-slide {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        height: 23.4375em;
+        width: 33%;
+        padding-right: .1em
+    }
+    .gallery-slider .swiper-nav {
+        position: absolute;
+        bottom: 2.875em;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        z-index: 70;
+        margin-left: 6.1em;
+        /* margin-top: -18em; */
+    }
+    
+    .gallery-slider .swiper-button {
+        width: .7em;
+        height: .7em;
+        position: relative;
+        left: unset;
+        top: unset;
+        right: unset;
+        margin: 0 .1em;
+        border-radius: 100%;
+        /* background: rgba(255, 255, 255, .08); */
+        -webkit-box-shadow: inset 0 2px 16px 0 rgba(44, 48, 56, .25);
+        box-shadow: inset 0 2px 16px 0 rgba(44, 48, 56, .25);
+        border: 3px dashed rgba(76, 71, 106, .8);
+        -webkit-backdrop-filter: blur(64px);
+        backdrop-filter: blur(64px);
+        margin-top: -13.5em;
+        
+    }
+    
+    .gallery-slider .swiper-button:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, .08);
+        /* background: -webkit-gradient(linear, left top, left bottom, from(#7321ff), to(#216cff));
+        background: -o-linear-gradient(top, #7321ff 0, #216cff 100%);
+        background: linear-gradient(180deg, #7321ff 0, #216cff 100%); */
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s;
+        opacity: 0;
+        border-radius: 50%;
+        
+    }
+    
+    .gallery-slider .swiper-button:hover {
+        border-color: #FDE096;
+        border: 3px solid rgba(253, 224, 150, .8);
+    }
+    .gallery-slider .swiper-button:hover svg path {
+        stroke: #F9FBFF;
+    }
+    .gallery-slider .swiper-button:hover:before {
+        opacity: 1
+    }
+    
+    .gallery-slider .swiper-button svg {
+        position: relative;
+        z-index: 2;
+        width: .625em
+    }
+    .Black1 {
+        position: absolute;
+        width: 100.75em;
+        height: 12em;
+        border-radius: 100%;
+        margin-left: 2em;
+        background-color: #060607;
+        z-index: 999;
+        margin-top: -5.5em;
+    }
+    
+    .Black2 {
+        position: absolute;
+        width: 7.75em;
+        height: 2em;
+        border-radius: 140%;
+        margin-left: 6.2em;
+        background-color: #15112E;
+        /* background-color: black; */
+        z-index: 49;
+        margin-top: 12.65em;
+    
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+        z-index: 2
+    }
+    
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+        display: none
+    }
+    .previe_slider{
+        cursor: pointer;
+        position: absolute;
+        margin-top: -15.7em;
+        margin-left: .1em;
+        width: 1.7em;
+        height:.45em;
+        border-radius: .15em;
+        z-index: 999;
+        background: radial-gradient(100% 100% at 100% 0%, #64A2FF 0%, #164AFF 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .2em;
+    }
+    .previe_slider img{
+        width: .22em;
+        margin-top: .08em;
+        margin-left: -.1em;
+    }
+    .previe_slider p{
+        font-size: .12em;
+        color: #F9FBFF;
+        letter-spacing: .1em;
+        /* margin-left: -.1em; */
+    }
+    /* .gallery {
+        margin-top: -1em;
+    }
+
+    .swiper-nav {
+        margin-top: 2em;
+    }
+
+    .Black2 {
+        position: absolute;
+        width: 20em;
+        height: 4em;
+        border-radius: 100%;
+        margin-left: -1.7em;
+        background-color: #060607;
+        z-index: 49;
+        margin-top: 8em;
+    }
+
+    .gallery-slider {
+        width: calc(50% + 4em);
+        margin-left: -9em
+    }
+
+    .gallery-slider .swiper-container {
+        width: calc(100% + .375em)
+    }
+
+    .gallery-slider .swiper-slide {
+        height: 1.25em;
+        padding-right: .375em
+    }
+
+    .gallery-slider .swiper-slide-next .gallery__img,
+    .gallery-slider .swiper-slide-next+.swiper-slide .gallery__img {
+        height: 10.25em
+    }
+
+    .gallery__img {
+        height: 10.25em;
+    }
+
+    .gallery-slider .swiper-nav {
+        position: relative;
+        z-index: 69;
+        bottom: unset;
+        -webkit-transform: unset;
+        -ms-transform: unset;
+        transform: unset;
+        width: 100%;
+        left: unset;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center
+    }
+
+    .gallery-slider .swiper-button {
+        width: auto;
+        height: auto;
+        margin: 0 1.5em;
+        background: 0 0;
+        -webkit-box-shadow: unset;
+        box-shadow: unset;
+        border: none;
+        -webkit-backdrop-filter: unset;
+        backdrop-filter: unset
+    }
+
+    .gallery-slider .swiper-button:before {
+        display: none
+    }
+
+    .gallery-slider .swiper-button:after {
+        display: block;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-size: .625em;
+        letter-spacing: .09em;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #9daab9
+    }
+
+    .gallery-slider .swiper-button-next:after {
+        content: 'NEXT'
+    }
+
+    .gallery-slider .swiper-button-next svg {
+        margin-right: 1.5em
+    }
+
+    .gallery-slider .swiper-button-prev:after {
+        content: 'PREV';
+        -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+        order: -1
+    }
+
+    .gallery-slider .swiper-button-prev svg {
+        margin-left: 1.5em
+    } */
+}

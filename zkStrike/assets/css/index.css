@@ -1,0 +1,886 @@
+* {
+  font-family: "Catamaran", sans-serif;
+  margin: 0;
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  position: relative;
+
+  background: #151226;
+  z-index: -1;
+}
+.back {
+  transition: all 0.5s ease;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  max-width: 1440px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+.container {
+  transition: all 0.5s ease;
+  z-index: 1;
+  max-width: 1440px;
+  height: 100%;
+  margin: auto;
+  border-radius: 32px;
+  position: relative;
+}
+.nav {
+  transition: all 0.5s ease;
+  padding-top: 48px;
+  color: #f9fbff;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.mobileStar,
+.mobileMenu,
+.menuBlock {
+  transition: all 0.5s ease;
+  display: none;
+}
+.categories {
+  transition: all 0.5s ease;
+  padding-left: 0;
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 80%;
+  letter-spacing: 0.04em;
+  color: #837b99;
+
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  transform: translate(0, 10%);
+  height: max-content;
+}
+.logo {
+  transition: all 0.5s ease;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  height: max-content;
+  gap: 16px;
+}
+.companyName {
+  transition: all 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  transform: translate(0, 10%);
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  height: max-content;
+}
+.companyName span {
+  transition: all 0.5s ease;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #837b99;
+}
+a {
+  transition: all 0.5s ease;
+  color: #837b99;
+  text-decoration: none;
+  transition: all 1s ease;
+}
+.column {
+  transition: all 0.5s ease;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+a:hover {
+  transition: all 0.5s ease;
+  color: #f9fbff;
+}
+.play {
+  transition: all 0.5s ease;
+  border: none;
+  display: flex;
+  height: max-content;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 24px;
+  background: radial-gradient(100% 100% at 100% 0%, #ffadad 0%, #f05555 100%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  border-radius: 12px;
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 80%;
+  letter-spacing: 0.04em;
+  color: #f9fbff;
+  align-items: center;
+}
+.play img,
+.pPlay {
+  transition: all 0.5s ease;
+  height: max-content;
+}
+.QASection {
+  transition: all 0.5s ease;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 104px;
+  color: #f9fbff;
+}
+.qaHead {
+  transition: all 0.5s ease;
+  width: max-content;
+  vertical-align: bottom;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 88px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #f9fbff;
+}
+.right {
+  transition: all 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 88px;
+  letter-spacing: -0.02em;
+  color: #f9fbff;
+}
+#grey {
+  transition: all 0.5s ease;
+
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: -0.02em;
+  color: #4c476a;
+}
+#viol {
+  transition: all 0.5s ease;
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 88px;
+
+  letter-spacing: -0.02em;
+  background: radial-gradient(100% 100% at 100% 0%, #ffadad 0%, #f05555 100%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.btnAsk {
+  transition: all 0.5s ease;
+  gap: 16px;
+  width: max-content;
+  display: flex;
+  padding: 9px 24px;
+  margin-left: 80px;
+  margin-right: 130px;
+  background: radial-gradient(100% 100% at 100% 0%, #924fe9 0%, #4516ff 100%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  border-radius: 12px;
+  flex-wrap: wrap;
+}
+.ask {
+  transition: all 0.5s ease;
+  height: max-content;
+  width: max-content;
+  margin-top: 64px;
+  display: flex;
+  flex-direction: row;
+  gap: 38px;
+}
+.openAsk {
+  transition: all 0.5s ease;
+  z-index: 2;
+  margin-left: 51px;
+
+  border: 1.5px solid #4c476a;
+  border-radius: 12px;
+  padding: 22px 19px 21px 19px;
+  display: flex;
+  height: max-content;
+  transition: background 0.5s ease;
+}
+.openAsk:hover {
+  transition: all 0.5s ease;
+  background: #3f3a61;
+}
+.askTheme {
+  transition: all 0.5s ease;
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.02em;
+  color: #f9fbff;
+  width: 294px;
+}
+.numeric {
+  transition: all 0.5s ease;
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 13px;
+  letter-spacing: 0.32em;
+  color: #9a5efd;
+}
+
+.faqText {
+  transition: all 0.5s ease;
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #837b99;
+  margin-top: 24px;
+  display: none;
+}
+.active {
+  transition: all 0.5s ease;
+  display: flex;
+  transition: display 0.5s ease;
+}
+.openAsk:hover {
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.qaBody {
+  transition: all 0.5s ease;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 88px;
+  padding-top: 64px;
+}
+.firstBlock {
+  transition: all 0.5s ease;
+  z-index: 1;
+}
+.field {
+  transition: all 0.5s ease;
+  gap: 64px;
+  margin: 240px auto auto auto;
+  display: flex;
+  flex-direction: column;
+}
+.field input {
+  transition: all 0.5s ease;
+  margin: auto;
+  width: 460px;
+  background: rgba(14, 16, 21, 0.16);
+  border: 1px solid rgba(241, 241, 241, 0.3);
+  backdrop-filter: blur(12px);
+  padding: 24px 32px;
+  border-radius: 32px 12px 32px 24px;
+  color: white;
+  caret-color: white;
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 80%;
+  letter-spacing: 0.04em;
+}
+.field input::placeholder {
+  transition: all 0.5s ease;
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 80%;
+  letter-spacing: 0.04em;
+  color: #837b99;
+}
+.field button {
+  transition: all 0.5s ease;
+  display: flex;
+  flex-direction: row;
+  width: max-content;
+  border: none;
+  background: radial-gradient(
+      118.27% 158.33% at 108.56% -58.33%,
+      #d9ffa8 0%,
+      #6b9536 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  border-radius: 12px;
+  padding: 18px 24px;
+  gap: 16px;
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 80%;
+  letter-spacing: 0.04em;
+  color: #f9fbff;
+  align-items: center;
+  margin: auto;
+}
+.field button img,
+#text {
+  transition: all 0.5s ease;
+  height: max-content;
+  display: flex;
+  flex-direction: row;
+}
+.fieldHead {
+  transition: all 0.5s ease;
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 88px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #f9fbff;
+}
+.fieldHead p {
+  transition: all 0.5s ease;
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 88px;
+  text-align: center;
+  background: linear-gradient(90deg, #67c8ff 0%, #745eff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.statsBar {
+  transition: all 0.5s ease;
+  height: 159px;
+  margin-top: 274px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(92, 82, 156, 0.32);
+}
+
+.statsNaming {
+  transition: all 0.5s ease;
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  color: #4c476a;
+}
+.statsNaming p {
+  transition: all 0.5s ease;
+  padding-bottom: 16px;
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 48px;
+  letter-spacing: -0.02em;
+  color: #f9fbff;
+}
+.amount {
+  transition: all 0.5s ease;
+  display: flex;
+  flex-direction: row;
+  gap: 112px;
+  align-items: start;
+}
+.downloads,
+.online,
+.rewards {
+  transition: all 0.5s ease;
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #f9fbff;
+}
+.online p {
+  transition: all 0.5s ease;
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffd875;
+}
+.rewards p {
+  transition: all 0.5s ease;
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #767bff;
+}
+.downloads p {
+  transition: all 0.5s ease;
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #dcff92;
+}
+#rightSide {
+  transition: all 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 580px;
+  border-right: 1px solid rgba(174, 202, 255, 0.3);
+}
+.headingRoadmap {
+  transition: all 0.5s ease;
+  margin: auto;
+  padding-top: 96px;
+  width: max-content;
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 205px;
+  line-height: 205px;
+  letter-spacing: 0.08em;
+  background: linear-gradient(90deg, #777cff 0%, #d049ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.slider-container {
+  transition: all 0.5s ease;
+  width: 100%;
+  margin-top: 48px;
+  overflow: hidden;
+}
+.slider {
+  transition: all 0.5s ease;
+
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.slide {
+  transition: all 0.5s ease;
+  gap: 40px;
+  text-align: center;
+  transition: transform 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  padding: 64px 78px;
+  flex: 0 0 calc(35% - 16px);
+  margin-right: 16px;
+  border-radius: 97px 48px 96px 49px;
+  border: 1.5px solid #aecaff;
+  backdrop-filter: blur(6px);
+  /* Note: backdrop-filter has minimal browser support */
+}
+.num {
+  transition: all 0.5s ease;
+  margin: auto;
+  width: max-content;
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.02em;
+  color: #f9fbff;
+  width: 375px;
+}
+.desc {
+  transition: all 0.5s ease;
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #abb8d2;
+}
+.slide.active {
+  transition: all 0.5s ease;
+  transform: translateY(45px);
+  background: linear-gradient(127.94deg, #2a2352 16.38%, #352e5e 113.08%);
+  backdrop-filter: blur(6px);
+}
+.controls {
+  transition: all 0.5s ease;
+  width: 150px;
+  height: 75px;
+  margin: 85px auto auto auto;
+  justify-content: space-evenly;
+  display: flex;
+}
+.control-button {
+  background: #3f3a61;
+  border-radius: 50%;
+  padding: 19px 21px;
+  cursor: pointer;
+  height: max-content;
+  transition: all 0.5s ease;
+}
+.control-button:hover {
+  transition: all 0.5s ease;
+  scale: 1.2;
+  background: linear-gradient(133.44deg, #ffaa98 23.93%, #fd69dc 100%);
+  border-radius: 50%;
+}
+.control-button img {
+  transition: all 0.5s ease;
+  display: flex;
+  height: max-content;
+}
+.menuBlock {
+  opacity: 0; /* Начальное значение прозрачности */
+  transition: opacity 0.1s ease; /* Плавное изменение прозрачности */
+  /* display: block; */
+  position: absolute;
+  width: 100%;
+  height: 5em;
+  z-index: 9999;
+  /* background: #ffffff; */
+  border-radius: 10em;
+}
+.menuBlock.visible {
+  display: flex;
+  opacity: 1; /* Показываем блок с меню */
+  margin-top: -6.72em;
+  transition: opacity 0.3s ease;
+}
+.menuBlock_block1 {
+  width: 100%;
+  height: 18em;
+  z-index: 9999;
+  background-color: rgba(21, 17, 46, 0.5);
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
+  border-radius: 0 0 1em 1em;
+  /* rgba(21, 17, 46, .5) */
+}
+.menuBlock_block1 {
+  color: white;
+}
+.menuBlock_block1_cont1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* gap: 6em; */
+}
+.mobile_menu {
+  width: 8em;
+  margin-top: 1.3em;
+  margin-left: -1em;
+  z-index: 9999;
+}
+.crest_mobile {
+  width: 2.5em;
+  margin-left: 5em;
+  margin-top: 1.2999999999999998em;
+  z-index: 9999;
+}
+
+.mobile_ul {
+  list-style-type: none;
+  color: #837b99;
+  font-weight: 600;
+  font-family: "Catamaran";
+  font-size: 1.1em;
+  margin-top: 2em;
+}
+.mobile_ul a {
+  text-decoration: none;
+}
+.mobile_ul li {
+  margin-top: 1.2em;
+}
+.mobile_ul li:hover {
+  color: #f9fbff;
+}
+.communicateBar2 {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  height: max-content;
+  width: max-content;
+  transform: translate(0px, 25%);
+  margin-left: 2.4em;
+  margin-top: 1em;
+}
+@media screen and (max-width: 1200px) {
+  .headingRoadmap {
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: 0.08em;
+    background: linear-gradient(90deg, #777cff 0%, #d049ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transition: all 0.5s ease;
+  }
+  .field {
+    transition: all 0.5s ease;
+    margin-top: 83px;
+  }
+  .fieldHead {
+    font-family: "Catamaran";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #f9fbff;
+    transition: all 0.5s ease;
+  }
+  .fieldHead p {
+    font-family: "Catamaran";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: linear-gradient(90deg, #67c8ff 0%, #745eff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transition: all 0.5s ease;
+  }
+  .statsBar {
+    flex-direction: column;
+    height: max-content;
+    width: max-content;
+    margin: 576px auto auto auto;
+    border-bottom: none;
+    transition: all 0.5s ease;
+  }
+  .amount {
+    width: max-content;
+    margin: 72px auto auto auto;
+    transition: all 0.5s ease;
+    text-align: center;
+    flex-direction: column;
+  }
+  .qaBody {
+    width: max-content;
+    margin: auto;
+    flex-direction: column;
+    gap: 0;
+    transition: all 0.5s ease;
+  }
+  #rightSide {
+    border-right: none;
+    width: max-content;
+    transition: all 0.5s ease;
+  }
+  #leftSide {
+    border-right: none;
+    width: max-content;
+    transition: all 0.5s ease;
+  }
+  .askTheme {
+    font-family: "Catamaran";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+    color: #f9fbff;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .categories,
+  .play {
+    display: none;
+    transition: all 0.5s ease;
+  }
+  .mobileMenu {
+    display: flex;
+    transition: all 0.5s ease;
+  }
+  .nav {
+    justify-content: space-around;
+    transition: all 0.5s ease;
+  }
+  .qaHead {
+    transition: all 0.5s ease;
+    font-family: "Catamaran";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 64px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #f9fbff;
+  }
+  #viol {
+    transition: all 0.5s ease;
+    font-family: "Catamaran";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 64px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    background: radial-gradient(100% 100% at 100% 0%, #ffadad 0%, #f05555 100%)
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  #grey {
+    transition: all 0.5s ease;
+    font-family: "Catamaran";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #4c476a;
+  }
+  .ask{
+    gap: 0;
+  }
+  .openAsk {
+    transition: all 0.5s ease;
+    margin-left: 0px;
+  }
+  .field input {
+    transition: all 0.5s ease;
+    width: 248px;
+  }
+  .sec1 {
+    transition: all 0.5s ease;
+    display: none;
+  }
+  .sec2_mob {
+    transition: all 0.5s ease;
+    display: flex;
+  }
+  .img1 {
+    transition: all 0.5s ease;
+    position: absolute;
+    left: 8.21%;
+    right: 64.87%;
+    top: 16.2%;
+    bottom: 80.03%;
+    width: 105px;
+    height: 212px;
+  }
+  .img2 {
+    transition: all 0.5s ease;
+    position: absolute;
+    left: 22.77%;
+    right: 40.77%;
+    top: 24.35%;
+    bottom: 75.23%;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    width: 72px;
+    height: 162px;
+  }
+  .img3 {
+        transition: all 0.5s ease;
+    position: absolute;
+    left: 42.56%;
+    right: 42.56%;
+    top: 18.1%;
+    bottom: 82.32%;
+    width: 58px;
+    height: 58px;
+  }
+  .img4 {
+        transition: all 0.5s ease;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    left: 61.72%;
+    right: 8.21%;
+    top: 16.99%;
+    bottom: 82.56%;
+  }
+  .img5{
+        transition: all 0.5s ease;
+position: absolute;
+left: 46.67%;
+right: 12.31%;
+top: 20.17%;
+bottom: 77.47%;
+width: 160px;height: 160px;
+  }
+  .sec2{
+position: absolute;
+left: -120.23%;
+right: -205.06%;
+top: 52.34%;
+bottom: 17.14%;
+transform: rotate(1.03deg);
+  }
+  .shade2{
+    left: -74.38999999999999px;
+    top: 2181px;
+  }
+  .shade1{
+position: absolute;
+left: 215.22%;
+right: -278.87%;
+top: 57.23%;
+bottom: 25.38%;
+  }
+  .askTheme{
+    font-size: 29px;
+    width: 200px;
+  }
+}

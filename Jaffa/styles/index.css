@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto Serif", sans-serif;
+    height: 100vh;
+    background: linear-gradient(90deg, #0d192f, #1c101e) no-repeat;
+}
+nav{
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 100% ;
+   
+}
+.nav_logo-navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+justify-content: center;
+align-items: center;
+
+}
+.nav_button{
+    box-sizing: content-box;
+    padding: 15px;
+    color: var(--bluish-blue-color);
+    height: 25px;
+    width: 100%;
+
+display: flex;
+text-align: center;
+justify-content: center;
+align-items: center;
+font-size: 14px;
+}
+.nav_logo{
+    width: 150px;
+}
+.nav_arrow{
+
+  height: 20px;
+}
+a{
+    text-decoration: none;
+}
+.navigation{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.nav_button-new{
+    background-color: orangered;
+    border-radius: 50%;
+    width: 50px;
+    padding: 7px 5px 7px 5px;
+    color: var(--white);
+}
+.portfolio{
+    gap: 5px;
+}
+
+.nav_list-ethereum-connect{
+    height: 35px;
+    width: 100%;
+max-width: 600px;
+    display: flex;
+    text-align: center;
+justify-content: center;
+align-items: center;
+gap: 15px;
+flex-wrap: wrap;
+}
+.nav_list-connect{
+    color: var(--bluish-blue-color);
+    height: 35px;
+    width: 100%;
+    padding: 20px;
+    background-color: var(--dark-slate-blue);
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+justify-content: center;
+align-items: center;
+gap: 5px;
+
+}
+.nav_list-crypto{
+    color: var(--white);
+    height: 35px;
+    width: 100%;
+    padding: 20px;
+    background-color: #3d7bc7;
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+justify-content: center;
+align-items: center;
+gap: 5px;
+
+}
+.nav_arrow-ethereum{
+    height: 30px;
+    float: var(--white);
+}
+.wallet {
+   
+    position: relative;
+    width: 100%;
+    max-width: 480px;
+    padding: 8px;
+    min-height: 100px;
+    margin: 0 auto;
+    padding: 16px;
+    border-radius: 26px;
+    background: linear-gradient(#141823, #0f1219);
+margin-top: 120px;
+margin-bottom: auto;
+}
+
+.wallet__choice {
+    margin-bottom: 8px;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+.wallet_icons-plus{
+    width: 25px;
+}
+.wallet__choice-items {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100px;
+    gap: 15px;
+}
+
+.wallet__choice-swap {
+    cursor: pointer;
+    color: #eaeef2;
+}
+
+.wallet__choice-limit {
+    cursor: pointer;
+    color: #526175;
+
+}
+.wallet_icons{
+    width: 20px;
+}
+.wallet__choice-limit:hover {
+    color: var(--light-blue-color);
+}
+
+.wallet__settings {
+    display: flex;
+    justify-content: space-between;
+    max-width: 120px;
+    gap: 15px;
+}
+
+
+
+
+
+
+.wallet__pay {
+    width: 100%;
+}
+
+.bg__you-pay {
+    font-size: 13px;
+    color: var(--bluish-blue-color);
+}
+
+.arrow-down {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 24px;
+    height: 24px;
+}
+
+.bg {
+    border-radius: 26px;
+    background: var(--black);
+    padding: 12px 16px;
+}
+
+.wallet__currency {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0;
+}
+
+.wallet__currency-eth {
+    display: flex;
+    align-items: center;
+
+}
+
+.wallet__subtitle {
+    padding-left: 16px;
+    color: var(--white);
+}
+
+.wallet__currency-eth svg {
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+.wallet__choice-currency {}
+
+.wallet__choice-currency-img {
+    width: 24px;
+    height: 24px;
+}
+
+.wallet__wrapper {}
+
+.wallet__currency-number {
+    text-align: right;
+    border: none;
+    background: var(--black);
+    color: var(--white);
+ 
+}
+.wallet__currency-number:focus {
+    outline: none;
+}
+
+.wallet_ether {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: var(--bluish-blue-color);
+}
+
+
+
+
+
+
+.bg__panel-stroke {
+    margin: 8px 0;
+    padding: 8px;
+    border: 1px solid #182b46;
+    border-radius: 16px;
+    height: 104px;
+}
+
+.bg__panel-subtitle {
+    font-size: 13px;
+    color: var(--bluish-blue-color);
+}
+
+.bg__panel-select {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.bg__panel-select-href {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1a2d3e;
+    max-width: 160px;
+    width: 100%;
+    padding: 6px 5px 6px 8px;
+    border-radius: 16px;
+}
+
+.bg__panel-select-href p {
+    color: #2456b6;
+}
+
+.bg__panel-select-href img {
+    width: 17px;
+    height: 17px;
+}
+
+.bg__panel-number {
+    color: var(--white);
+
+}
+
+.wallet__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 7px 16px;
+    background: var(--dark-slate-blue);
+    border: none;
+    border-radius: 16px;
+    color: #3d7bc7;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 8px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 100%;
+   
+
+}
+.footer_center-container{
+    display: flex;
+    justify-content: space-between;
+    color: var(--bluish-blue-color);
+    padding-top: 25px;
+    flex-wrap: wrap;
+}
+.footer_top_line{
+    background-color: var(--dark-slate-blue);
+    height: 1px;
+    width: 100%;
+    margin: 0 auto;
+}
+.footer_center_green_circle{
+
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+   
+    
+}
+.footer_center_session{
+    display: flex;
+    gap: 15px;
+}
+.footer_center_id{
+    color: var(--dark-slate-blue) ; 
+}
+.footer_export{
+    width: 13px;
+  
+}
+.green-circle{
+    width: 7px;
+}
+.footer_chat-box{
+    
+ height: 80px;
+}

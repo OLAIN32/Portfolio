@@ -1,0 +1,36 @@
+<svg width="820" height="687" viewBox="0 0 820 687" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.96" filter="url(#filter0_f_182_832)">
+<ellipse cx="305.251" cy="386.03" rx="106.017" ry="319.8" transform="rotate(-45.6529 305.251 386.03)" fill="#100D23"/>
+</g>
+<g opacity="0.4">
+<mask id="mask0_182_832" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="234" y="0" width="586" height="585">
+<circle cx="527.5" cy="292.5" r="292.5" fill="#15112E"/>
+</mask>
+<g mask="url(#mask0_182_832)">
+<circle cx="527.5" cy="292.5" r="292.5" fill="#15112E"/>
+<g filter="url(#filter1_f_182_832)">
+<circle cx="413.964" cy="-69.6081" r="178.196" transform="rotate(32.1726 413.964 -69.6081)" fill="#92D8FF"/>
+</g>
+<g filter="url(#filter2_f_182_832)">
+<circle cx="169.639" cy="81.7806" r="178.196" transform="rotate(32.1726 169.639 81.7806)" fill="#FF69F0"/>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_f_182_832" x="0.784668" y="85.9187" width="608.933" height="600.223" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="32" result="effect1_foregroundBlur_182_832"/>
+</filter>
+<filter id="filter1_f_182_832" x="15.7438" y="-467.828" width="796.44" height="796.44" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="110" result="effect1_foregroundBlur_182_832"/>
+</filter>
+<filter id="filter2_f_182_832" x="-228.581" y="-316.439" width="796.44" height="796.44" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="110" result="effect1_foregroundBlur_182_832"/>
+</filter>
+</defs>
+</svg>

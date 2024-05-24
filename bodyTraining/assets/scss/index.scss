@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter";
+}
+html {
+  font-size: calc(100vw / 1100 * 10);
+}
+.logo {
+  background-image: url(../img/logo.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 5.2em;
+  height: 4.3em;
+}
+.buy {
+  display: flex;
+  align-items: center;
+  padding: 0.6em 1.5em;
+  border-radius: 6.3em;
+  border: none;
+  background: linear-gradient(126.61deg, #ff4f4f 40.03%, #e9862c 89.03%);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 1.2em;
+  color: #ffffff;
+  :hover{
+  }
+}
+.nav {
+  width: 100em;
+  height: 4.1em;
+  background: #ffffff;
+  box-shadow: 0em -0.1em 1.4em rgba(0, 0, 0, 0.25);
+  padding: 1.9em 6em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav_menu {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 3.2em;
+  list-style: none;
+}
+.tel {
+  display: flex;
+  align-items: center;
+  padding: 0.6em 1.5em;
+  border-radius: 6.3em;
+  border: none;
+  background: linear-gradient(281.52deg, #ff4f4f 37.15%, #e9862c 101.91%);
+  font-size: 1em;
+  line-height: 1.2em;
+  color: #ffffff;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  text-align: center;
+  color: #ffffff;
+}
+a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.2em;
+  color: #000000;
+  text-decoration: none;
+  :hover{
+    cursor: pointer;
+
+  }
+}
+.line {
+  display: flex;
+  width: 8.4em;
+  height: 0.1em;
+  mix-blend-mode: normal;
+  background-color: #000000;
+  border: 0.2em solid #000000;
+  margin-top: 1.4em;
+}
+.header_main {
+  width: 11.8em;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.4em;
+  letter-spacing: 0.2em;
+  color: #000000;
+}
+.main {
+  background-image: url(../img/main.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 8.8em 6.3em;
+  display: flex;
+  flex-direction: column;
+}
+.advContainer {
+  align-items: start;
+  justify-content: space-between;
+  margin-top: 4.8em;
+  display: flex;
+  flex-direction: row;
+}
+.advancements {
+  width: 20.7em;
+}
+.advName {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2em;
+  color: #000000;
+}
+.advDesc {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.2em;
+  color: #333333;
+}
+.heading_aboutUs {
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.4em;
+  color: #000000;
+}
+.lineAss {
+  width: 7.4em;
+  height: 0.1em;
+  display: flex;
+  mix-blend-mode: normal;
+  background-color: #000000;
+  border: 0.1em solid #000000;
+  margin-top: 0.65em;
+}
+.aboutUs {
+    display: flex;
+  padding: 6.9em 6.3em;
+flex-direction: row;
+justify-content: space-between;
+}
+.p1 {
+    margin-top: .5em;
+  width: 17em;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.4em;
+  color: #000000;
+}
+.sec {
+  margin-top: 2.9em;
+  margin-left: 2.2em;
+  width: 32.8em;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2em;
+  color: #333333;
+}
+.p2 {
+  margin-left: 2.2em;
+}
+.p3{
+margin-top: 2.4em;
+width: 35.8em;
+font-style: normal;
+font-weight: 500;
+font-size: 1.2em;
+color: #333333;
+}
+.photo{
+width: 50.6em;
+height: 52em;
+background-image: url(../img/Негр.png);
+background-repeat: no-repeat;
+background-size: cover;
+}

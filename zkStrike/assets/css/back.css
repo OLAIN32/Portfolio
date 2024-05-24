@@ -1,0 +1,96 @@
+.img {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img1 {
+  background-image: url(../src/image1.svg);
+  position: absolute;
+  width: 183px;
+  height: 372px;
+  left: 210px;
+  top: 150px;
+}
+.img2 {
+  position: absolute;
+  width: 128px;
+  height: 292px;
+  left: 200px;
+  top: 622px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  background-image: url(../src/image2.svg);
+}
+.img3 {
+  position: absolute;
+  width: 85px;
+  height: 85px;
+  left: 1111px;
+  top: 326px;
+  background-image: url(../src/image3.svg);
+}
+.img4 {
+  position: absolute;
+  width: 142px;
+  height: 142px;
+  left: 1210px;
+  top: 446px;
+  background-image: url(../src/image4.svg);
+}
+.img5 {
+  position: absolute;
+  width: 327px;
+  height: 327px;
+  left: 1025px;
+  top: 623px;
+  background-image: url(../src/image5.svg);
+}
+.sec1 {
+  position: absolute;
+  width: 1514px;
+  height: 840px;
+  left: 0;
+  right: 0;
+  top: 112px;
+}
+.sec2{
+position: absolute;
+width: 1353.65px;
+height: 1071px;
+left: 52px;
+right: 0;
+top: 1122px;
+}
+.shade1{
+/* Ellipse 5 */
+z-index: -1;
+position: absolute;
+width: 638.26px;
+height: 638.26px;
+left: 502.0899999999999px;
+top: 1397px;
+border-radius: 100%;
+background: #92D8FF;
+opacity: 0.2;
+filter: blur(110px);
+transform: rotate(75.92deg);
+
+}
+.shade2{
+    z-index: -1;
+position: absolute;
+width: 464.56px;
+height: 464.56px;
+left: 403.61px;
+top: 1523px;
+background: #FF69F0;
+opacity: 0.2;
+filter: blur(110px);
+transform: rotate(75.92deg);
+}
+.sec2_mob{
+  display: none;
+position: absolute;
+left: 0;
+right: 0;
+top: 3.75%;
+bottom: 74.36%;
+}

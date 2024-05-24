@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="topnav">
+        <div class="lNav">
+          <div class="logo">
+            <img src="assets/img/logo.svg" class="logoImg" alt="" />
+          </div>
+          <div class="vLine"></div>
+          <div class="roomName">
+            <p class="room">(Backlog 03) - Aibo Redesign Landing Page</p>
+            <div class="timer"></div>
+          </div>
+        </div>
+        <div class="rNav">
+          <div class="chat-icon">
+            <img class="chat-image" src="assets/img/chat.svg" alt="" />
+          </div>
+          <div class="search">
+            <img
+              class="searchLogo"
+              src="assets/img/search-alt-svgrepo-com.svg"
+              alt=""
+            />
+            <input type="text" placeholder="Search message..." />
+          </div>
+          <div class="login">
+            <div class="persAcc"></div>
+            <div class="moreBtn">
+              <img
+                class="iconMore"
+                src="assets/img/arrow-down-svgrepo-com.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr style="margin-bottom: 30px; border: 1px solid rgb(61, 61, 63)" />
+      <div class="container-main">
+        <div id="sidebar">
+          <section class="otherUsers">
+            <div class="user" id="user1">
+              <div class="mic">
+                <img class="micLogo" src="assets/img/mic.svg" alt="" />
+              </div>
+              <div class="name">Caroline J.</div>
+            </div>
+            <div class="user" id="user2">
+              <div class="mic">
+                <img class="micLogo" src="assets/img/mic.svg" alt="" />
+              </div>
+              <div class="name">Justin T.</div>
+            </div>
+            <div class="user" id="user3">
+              <div class="mic">
+                <img class="micLogo" src="assets/img/mic.svg" alt="" />
+              </div>
+              <div class="name">Ivan I.</div>
+            </div>
+            <div class="user" id="user4">
+              <div class="mic">
+                <img class="micLogo" src="assets/img/mic.svg" alt="" />
+              </div>
+              <div class="name">Dmitriy D.</div>
+            </div>
+            <div class="user" id="user5">
+              <div class="mic">
+                <img class="micLogo" src="assets/img/mic.svg" alt="" />
+              </div>
+              <div class="name">Kate D.</div>
+            </div>
+            <div class="moreUser">More Users ···</div>
+          </section>
+          <section class="selectedVideo">
+            <div class="selectedUser" id="selectUser">
+              <div class="selName">Caroline Jepherson</div>
+            </div>
+            <div class="selectedUser" id="selectUser">
+              <div class="selName">Justin Timbur</div>
+            </div>
+            <div class="selectedUser" id="selectUser">
+              <div class="selName">Ivan Ivanello</div>
+            </div>
+            <div class="selectedUser" id="selectUser">
+              <div class="selName">Dmitriy Dimomenko</div>
+            </div>
+            <div class="selectedUser" id="selectUser">
+              <div class="selName">Kate Davidson</div>
+            </div>
+          </section>
+          <div class="bottomBar">
+            <div class="btnContainer" id="btnContainer">
+              <div class="roomCode">
+                <div id="keygen-code"></div>
+                <div class="vLines"></div>
+                <button class="copyBtn" onclick="copyToClipboard()">
+                  <img class="copyimg" src="assets/img/copy.svg" alt="" />
+                </button>
+              </div>
+              <div class="contactbtn">
+                <div class="mute">
+                  <img class="btnImg" src="assets/img/Offmic.svg" alt="" />
+                </div>
+                <div class="video">
+                  <img
+                    class="btnImg"
+                    src="assets/img/camera-video-off-svgrepo-com.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="dem">
+                  <img class="btnImg" src="assets/img/dem.svg" alt="" />
+                </div>
+                <div class="subtitle">
+                  <img class="btnImg" src="assets/img/subtitle.svg" alt="" />
+                </div>
+                <div class="cast">
+                  <img class="btnImg" src="assets/img/cast.svg" alt="" />
+                </div>
+                <div class="more">
+                  <img class="btnImg" src="assets/img/more.svg" alt="" />
+                </div>
+              </div>
+              <div class="exit">Leave Meet</div>
+            </div>
+          </div>
+        </div>
+
+        <main class="chat">
+          <div class="chat-container" id="chat-container">
+            <div id="chat-box"></div>
+            <div class="write" id="write">
+              <input
+                type="text"
+                id="user-input"
+                placeholder="Write a message..."
+              />
+              <button id="send-btn">
+                <img
+                  class="sendIco"
+                  src="assets/img/send-svgrepo-com.svg"
+                  alt=""
+                />
+              </button>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script>
+      function generateCodeKey() {
+        const characters =
+          "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        let codeKey = "";
+
+        for (let i = 0; i < 13; i++) {
+          codeKey += characters.charAt(
+            Math.floor(Math.random() * characters.length)
+          );
+        }
+
+        return codeKey;
+      }
+
+      function copyToClipboard() {
+        const codeKey = document.getElementById("keygen-code").innerText;
+
+        navigator.clipboard
+          .writeText(codeKey)
+          .then(() => {
+            alert("Код скопирован в буфер обмена!");
+          })
+          .catch((error) => {
+            console.error("Ошибка при копировании кода: ", error);
+          });
+      }
+
+      window.onload = function () {
+        const codeKey = generateCodeKey();
+        document.getElementById("keygen-code").innerText = codeKey;
+      };
+    </script>
+    <script src="assets/JS/timer.js"></script>
+    <script src="assets/JS/chat.js"></script>
+    <script src="assets/JS/cardOpener.js"></script>
+    <script src="assets/JS/btnClickable.js"></script>
+  </body>
+</html>

@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  font-family: "Waukegan LDO", sans-serif;
+}
+body {
+  background-color: rgb(21, 28, 34);
+}
+.container {
+  width: 1440px;
+  margin: auto;
+  background-color: rgb(21, 28, 34);
+}
+.nav {
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.search,
+.more {
+  width: 15px;
+  height: 15px;
+  border: none;
+}
+
+ul {
+  gap: 15px;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+li {
+  padding: 15px;
+  width: max-content;
+}
+.faq {
+  background-image: url(../images/faq.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.upSide {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.selectors{
+    display: flex;
+    
+justify-content: space-between;
+    width: 550px;
+}
+select{
+    padding:5px 25px ;
+    background-color: rgb(21, 28, 34);
+    color: rgb(93,102,109);
+    border: 2px solid rgb(93,102,109);
+    border-radius: 15px;
+    letter-spacing: .2em;
+}
+option{
+    padding:5px 25px  ;
+    letter-spacing: .2em;
+}
+.gamelogo {
+  margin-top: 75px;
+  margin-left: 35px;
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 29px 8px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 0px 29px 8px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 0px 29px 8px rgba(34, 60, 80, 0.2);
+}
+h1 {
+  margin-top: 15px;
+  margin-left: 35px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: .1em;
+}
+h3 {
+  margin-top: 15px;
+  margin-left: 35px;
+  width: 750px;
+  color: white;
+  font-weight: 500;
+  letter-spacing: .1em;
+}
+.card {
+  width: 350px;
+  height: max-content;
+  background-color: rgb(35, 45, 54);
+
+  color: #999;
+  border-radius: 15px;
+}
+
+.platform {
+  margin-top: 15px;
+}
+.information {
+  padding: 0 15px 15px 15px;
+  display: flex;
+  flex-direction: column;
+}
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.imgcard {
+  border-radius: 15px 15px 0 0;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  background-image: url(../images/card1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.defcard {
+  width: 150px;
+}
+.maxUsers {
+  margin-top: 10px;
+  padding: 5px 15px;
+  background-color: #999;
+  color: white;
+  width: max-content;
+  height: max-content;
+  border-radius: 5px;
+}
+a {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 0.1em;
+}
+.navMenu {
+  text-decoration: none;
+  color: white;
+}
+.logo {
+  width: 250px;
+}
+.tournamentName {
+  font-size: 22px;
+  margin-top: 25px;
+}
+.bPanel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 35px;
+}
+.buttonConnect {
+  background-color: rgb(72, 103, 253);
+  padding: 10px;
+  border-radius: 15px;
+}
+.line {
+  background-color: #4e4e4e97;
+  width: 80%;
+  height: 2px;
+  border-radius: 15px;
+}
+.date {
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.downSide{
+    margin-left: 35px;
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+
+}

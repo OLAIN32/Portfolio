@@ -1,0 +1,670 @@
+.menuBlock {
+  opacity: 0; /* Начальное значение прозрачности */
+  transition: opacity 0.1s ease; /* Плавное изменение прозрачности */
+  /* display: block; */
+  position: absolute;
+  width: 100%;
+  height: 5em;
+  z-index: 9999;
+  /* background: #ffffff; */
+  border-radius: 10em;
+  display: none;
+}
+.menuBlock.visible {
+  opacity: 1; /* Показываем блок с меню */
+  margin-top: -6.72em;
+  transition: opacity 0.3s ease;
+  display: flex;
+}
+.menuBlock_block1 {
+  transition: all 0.5s ease;
+  width: 100%;
+  height: 28em;
+  z-index: 9999;
+  background-color: rgba(21, 17, 46, 0.5s);
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
+  border-radius: 0 0 1em 1em;
+  /* rgba(21, 17, 46, .5) */
+}
+.menuBlock_block1 {
+  transition: all 0.5s ease;
+  color: white;
+}
+.menuBlock_block1_cont1 {
+  transition: all 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* gap: 6em; */
+}
+.mobile_menu {
+  transition: all 0.5s ease;
+  width: 15em;
+  margin-top: 1.3em;
+  margin-left: -1em;
+  z-index: 9999;
+}
+.crest_mobile {
+  transition: all 0.5s ease;
+  width: 2.5em;
+  margin-left: 5em;
+  margin-top: -0.7em;
+  z-index: 9999;
+}
+
+.mobile_ul {
+  transition: all 0.5s ease;
+  list-style-type: none;
+  color: #837b99;
+  font-weight: 600;
+  font-family: "Catamaran";
+  font-size: 1.1em;
+  margin-top: 2em;
+}
+.mobile_ul a {
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+.mobile_ul li {
+  transition: all 0.5s ease;
+  margin-top: 1.2em;
+}
+.mobile_ul li:hover {
+  transition: all 0.5s ease;
+  color: #f9fbff;
+}
+.communicateBar2 {
+  transition: all 0.5s ease;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  height: max-content;
+  width: max-content;
+  transform: translate(0px, 25%);
+  margin-left: 2.4em;
+  margin-top: 1em;
+}
+* {
+  font-family: "Catamaran", sans-serif;
+  margin: 0;
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  position: relative;
+
+  background: radial-gradient(63.92% 63.92% at 50% 36.08%, #171A23 0%, #13151D 100%);
+
+  z-index: -1;
+}
+
+.container {
+  transition: all 0.5s ease;
+  max-width: 1440px;
+  height: 100%;
+  margin: auto;
+  border-radius: 32px;
+  position: relative;
+
+}
+.nav {
+  transition: all 0.5s ease;
+  align-items: center;
+  padding-top: 60px;
+  color: #f9fbff;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.mobileStar,
+.mobileMenu {
+  transition: all 0.5s ease;
+  display: none;
+}
+.categories:first-child {
+  transition: all 0.5s ease;
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 80%;
+  letter-spacing: 0.04em;
+  color: #dedae8;
+}
+.categories {
+  transition: all 0.5s ease;
+  padding: 15px 0;
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 80%;
+  letter-spacing: 0.04em;
+  color: #7a7f9c;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  transform: translate(0, 10%);
+  height: max-content;
+}
+.logo {
+  transition: all 0.5s ease;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.companyName {
+  transition: all 0.5s ease;
+  transition: all 0.5ss ease;
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #f9fbff;
+  height: max-content;
+}
+a {
+  transition: all .5s ease;
+  gap: 16px;
+  color: #837b99;
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 80%;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+}
+a:hover{
+font-family: 'Catamaran';
+font-style: normal;
+font-weight: 700;
+font-size: 13px;
+line-height: 80%;
+letter-spacing: 0.04em;
+color: #DEDAE8;
+}
+
+li {
+  transition: all 0.5s ease;
+  gap: 16px;
+  display: flex;
+  align-items: center;
+}
+.play {
+  transition: all 0.5s ease;
+  display: flex;
+  border: none;
+  height: max-content;
+  padding: 15px 24px;
+  background: radial-gradient(100% 100% at 100% 0%, #35dff8 0%, #1388ca 100%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  border-radius: 12px;
+}
+.pPlay {
+  transition: all 0.5s ease;
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 13px;
+  line-height: 13px;
+  letter-spacing: 0.04em;
+  color: #f9fbff;
+  height: max-content;
+}
+.slider {
+  transition: all 0.5s ease;
+  height: max-content;
+  width: max-content;
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px 64px;
+}
+.block {
+    overflow: hidden;
+  transition: all 0.5s ease;
+  height: max-content;
+  width: 947px;
+  padding: 48px;
+  border-radius: 24px 64px;
+  background: linear-gradient(180deg, #222431 0%, #202336 100%);
+}
+.dollar {
+  background-image: url(../src/dollar.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 459px;
+  height: 674.31px;
+  left: 516px;
+  top: 71px;
+  z-index: 1;
+}
+.blockHead {
+  transition: all 0.5s ease;
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 80%;
+  letter-spacing: 0.24em;
+  color: #3de6ff;
+  padding-top: 77px;
+}
+.descBlock {
+  transition: all 0.5s ease;
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: #7a7f9c;
+  margin-top: 48px;
+  width: 345px;
+}
+.bottomNaming {
+  transition: all 0.5s ease;
+  margin-top: 150px;
+  gap: 4px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  background: linear-gradient(
+    92.49deg,
+    #f9fbff 64.01%,
+    rgba(149, 151, 153, 0) 201.37%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.bottomNaming span {
+  transition: all 0.5s ease;
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 64px;
+
+  letter-spacing: -0.02em;
+  background: radial-gradient(100% 100% at 100% 0%, #2ce4ff 0%, #2cb3ff 100%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.utility {
+  transition: all 0.5s ease;
+  text-align: left;
+  padding: 48px;
+  border-radius: 64px 24px;
+  flex-direction: column;
+  display: flex;
+  width: max-content;
+  height: max-content;
+  background: radial-gradient(100% 100% at -7.74% 0%, #2e3143 0%, #25283a 100%);
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #f9fbff;
+}
+.utilityHead {
+  transition: all 0.5s ease;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.btnr {
+  transition: all 0.5s ease;
+  display: flex;
+  border-radius: 50%;
+  padding: 12px 14px;
+  border: 1.5px solid #7a7f9c;
+}
+.section {
+  transition: all 0.5s ease;
+  margin: 29px auto auto auto;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.rside {
+  transition: all 0.5s ease;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+}
+.sect {
+  transition: all 0.5ss ease;
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: -0.02em;
+  color: #f9fbff;
+  padding: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 250px;
+  height: max-content;
+  border-radius: 24px;
+  border: 1.5px solid #454a67;
+}
+.utility .logo {
+  transition: all 0.5s ease;
+  margin-top: 105px;
+}
+.upSide {
+  transition: all 0.5s ease;
+  margin-top: 53px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.sect:hover,
+.btnr:hover {
+  transition: all 0.5s ease;
+  background: linear-gradient(90deg, #454a67 0%, #3c4265 100%);
+  transition: all 0.5ss ease;
+  cursor: pointer;
+}
+.bottom {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin:16px auto auto auto;
+}
+.buy,
+.earn,
+.stake {
+  overflow: hidden;
+  position: relative;
+  transition: all 0.5s ease;
+  flex-direction: column;
+  display: flex;
+  padding: 48px 40px;
+  border-radius: 32px;
+  width: 353px;
+  border: 1.5px solid #222431;
+}
+.buy .cardname {
+  transition: all 0.5s ease;
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: #f9fbff;
+}
+.stake .cardname,
+.earn .cardname {
+  transition: all 0.5s ease;
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  color: #f9fbff;
+}
+.descCard {
+  margin-top: 24px;
+  transition: all 0.5s ease;
+  width: 209px;
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 13px;
+  letter-spacing: -0.02em;
+  color: #7a7f9c;
+}
+.buy:hover,
+.earn:hover,
+.stake:hover {
+  background: radial-gradient(
+    90.91% 172.77% at 100% 0%,
+    #222431 0%,
+    #222435 100%
+  );
+  cursor: pointer;
+}
+.cardbutton {
+  transition: all 0.5s ease;
+  width: max-content;
+  margin-top: 103px;
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 80%;
+  letter-spacing: 0.04em;
+  color: #f9fbff;
+  background-color: rgba(19, 135, 202, 0);
+  display: flex;
+  padding: 18px 40px;
+  border: 1.5px solid #837b99;
+  border-radius: 16px;
+}
+.cardbutton:hover {
+  transition: all 0.5s ease;
+  background: linear-gradient(90deg, #67c8ff 0%, #745eff 100%);
+  border-radius: 12px 12px 24px 24px;
+}
+.img1 {
+  position: absolute;
+  width: 251px;
+  height: 238px;
+  left: 170px;
+  top: 78px;
+  background-image: url(../src/buy.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img2 {
+  position: absolute;
+  width: 251px;
+  height: 238px;
+  left: 170px;
+  top: 78px;
+  background-image: url(../src/stake.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img3 {
+  position: absolute;
+  width: 294px;
+  height: 238px;
+  left: 170px;
+  top: 78px;
+  background-image: url(../src/earn.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.input-container {
+  position: absolute;
+  left: 48px;
+  top: 48px;
+  gap: 16px;
+  display: flex;
+  width: max-content;
+}
+.inp {
+  background-color: #00000000;
+  box-sizing: border-box;
+  width: 8px;
+  height: 8px;
+  border: 1.5px solid #7a7f9c;
+}
+.inp:checked {
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(100% 100% at 100% 0%, #35dff8 0%, #1388ca 100%);
+}
+.shade1 {
+  z-index: 0;
+  position: absolute;
+  width: 443px;
+  height: 443px;
+  left: 700px;
+  top: 507px;
+  background: #ff67b9;
+  filter: blur(160px);
+}
+.shade2 {
+  z-index: 0;
+  position: absolute;
+  width: 443px;
+  height: 443px;
+  left: 958px;
+  top: 322px;
+  background: #8960ff;
+  filter: blur(160px);
+}
+.shade3 {
+  z-index: 0;
+  position: absolute;
+  width: 443px;
+  height: 443px;
+  left: 825px;
+  top: 384px;
+  background: #608cff;
+  filter: blur(160px);
+}
+@media screen and (max-width: 1300px) {
+  .bottomNaming {
+z-index: 2;
+  }
+  .block {
+    overflow: hidden;
+    max-width:326px;
+    height: 508px;
+  }
+  .dollar{
+    z-index: 1;
+position: absolute;
+width: 234px;
+height: 328.31px;
+left: 200px;
+top: 309px;
+  }
+  .shade1 {
+position: absolute;
+left: 64.51%;
+right: -49.36%;
+top: 83.13%;
+bottom: 55.59%;
+background: #FF67B9;
+filter: blur(160px);
+  }
+  .shade2 {
+/* Ellipse 72 */
+
+position: absolute;
+left: 95.11%;
+right: -88.96%;
+top: 95.79%;
+bottom: 66.93%;
+
+background: #8960FF;
+filter: blur(160px);
+
+  }
+  .shade3 {
+position: absolute;
+left: 76.79%;
+right: -15.89%;
+top: 95.79%;
+bottom: 60.9%;
+background: #608CFF;
+filter: blur(160px);
+  }
+  .upSide {
+    flex-direction: column;
+    width: max-content;
+    margin: 48px auto auto auto;
+
+  }
+  .bottom{
+    width: max-content;
+    flex-direction: column;
+margin: 16px  auto auto auto;  
+}
+  
+}
+@media screen and (max-width:690px) {
+    .categories,.play{
+        display: none;
+    }
+    .mobileMenu{
+        display: flex;
+    }
+    .descBlock{
+        width: 276px;
+    }
+    .bottomNaming{
+font-family: 'Catamaran';
+font-style: normal;
+font-weight: 900;
+font-size: 32px;
+line-height: 32px;
+letter-spacing: -0.02em;
+background: linear-gradient(92.49deg, #F9FBFF 64.01%, rgba(149, 151, 153, 0) 201.37%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+    }
+    .bottomNaming span{
+        width: 177px;
+font-family: 'Catamaran';
+font-style: normal;
+font-weight: 900;
+font-size: 48px;
+line-height: 48px;
+letter-spacing: -0.02em;
+background: radial-gradient(100% 100% at 100% 0%, #2CE4FF 0%, #2CB3FF 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+    }
+
+    .slider{
+        width: 350px;
+    }
+    .sect{
+        width: 209px;
+    }
+}
+@media screen and (max-width:390) {
+  .buy,
+.earn,
+.stake {
+  width: 230px;
+}
+}
